@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data Charts</title>
+    <!-- Import Chart.js and chartjs-adapter-date-fns -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <!-- Import Socket.IO -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Link to your external JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<center> <h1>Monitoring Temperature dan Kelembapan Alat Pengering Gabah</h1> </center>
+<h1>Pembacaan Sensor Bagian Bawah</h1>
+<body>
+    <canvas id="temperatureLowerChart" width="400" height="100"></canvas>
+    <canvas id="humidityLowerChart" width="400" height="100"></canvas>
+    <h1>Pembacaan Sensor Bagian Atas</h1>
+    <canvas id="temperatureUpperChart" width="400" height="100"></canvas>
+    <canvas id="humidityUpperChart" width="400" height="100"></canvas>
+</body>
+</html>
