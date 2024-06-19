@@ -15,7 +15,7 @@ const io = socketIO(server, {
     credentials: true,
   },
 });
-const port = 1000;
+const port = 3000;
 
 // Middleware untuk CORS
 app.use(cors({
@@ -185,11 +185,6 @@ io.on('connection', (socket) => {
     });
   });
 });
-
-
-
-
-
 
 // Inisialisasi server HTTP
 server.listen(port, () => {
